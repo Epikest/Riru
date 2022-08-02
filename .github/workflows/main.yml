@@ -1,11 +1,7 @@
 name: Core
 
-on:
-  push:
-    branches:
-      - master
-    paths-ignore:
-      - '**/README.md'
+on: [push, pull_request, workflow_dispatch]
+
 jobs:
   build:
     runs-on: ubuntu-20.04
